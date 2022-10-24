@@ -135,7 +135,6 @@ alias ll='ls -l --color=auto'    #ll可以代替ls -l
  /usr/bin/ls                                     
 $ which cd    #同时我们发现指令都是在bin目录下的
 /usr/bin/cd
-
 ```
 
 指令本质上就是程序，Linux中，指令、命令、工具都是可执行程序 ，都存放在普通文件中，linux下一切皆文件，我们的指令都在bin目录下
@@ -230,7 +229,13 @@ $ mkdir -p dir1/dir2/dir3
 
 写一个1000行的文件：
 
-![](C:\Users\wangxinlei26\AppData\Roaming\marktext\images\2022-10-24-22-42-53-image.png)
+```
+count=0; while [ $count -le 1000 ]; do echo "hello ${count}"; let count++; done > cat.txt
+```
+
+![image](img/01.png)
+
+
 
 more会先显示一部分内容，按回车就可以继续读取内容，按q退出，但more有一个弊端，只能往下翻，不能往上翻，所以我们一般不用more指令
 
@@ -466,7 +471,7 @@ ip语法：`zip [压缩后的文件名.zip] [目标文件]`
 
 用法 ：`stat [文件]`
 
-![](C:\Users\wangxinlei26\AppData\Roaming\marktext\images\2022-10-24-23-48-18-image.png)
+![image2](img/02.png)
 
 文件的相关信息：
 
@@ -486,7 +491,7 @@ ip语法：`zip [压缩后的文件名.zip] [目标文件]`
 Linux中如果有NVIDIA显卡，使用nvidia-smi命令可以查看显卡信息
 
 - 对nvidia-smi显示界面进行详细解读  
-  ![nvidia-smi界面解读](https://img-blog.csdnimg.cn/20201229174609395.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0VfY2hvcw==,size_16,color_FFFFFF,t_70)
+  
 
 - 以一定周期输出上述界面信息
 
