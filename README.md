@@ -569,3 +569,5 @@ Linux中如果有NVIDIA显卡，使用nvidia-smi命令可以查看显卡信息
 - 网络操作命令：`ifconfig、ip、ping、netstat、telnet、ftp、route、rlogin、rcp、finger、mail、 nslookup`
 - 系统安全相关命令：`passwd、su、umask、chgrp、chmod、chown、chattr、sudo ps、who`
 - 其它命令：`tar、unzip、gunzip、unarj、mtools、man、unendcode、uudecode`
+
+## [Linux指令大全](https://www.runoob.com/linux/linux-command-manual.html)
